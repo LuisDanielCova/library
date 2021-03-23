@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Library!</h1>
+
+    <table id="myBooks">
+        <thead>
+            <tr>
+                <th colspan="6">Awesome Books Omg</th>
+            </tr>
+            <tr>
+                <th>Index</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody class="books">
+            
+        </tbody>
+    </table>
+
+    <button id="openForm">New Book!</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" name="bookTitle" id="bookTitle" placeholder="Book title"><br>
+                <label for="bookAuthor">Book's Author</label>
+                <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Book Author"><br>
+                <label for="bookPages">Pages:</label>
+                <input type="number" name="bookPages" id="bookPages" placeholder="0"><br>
+                <label for="readCheck">Did you read it?</label>
+                <input type="checkbox" name="readCheck" id="readCheck"><br>
+                <input type="button" value="Add the book!" id="addNewBook">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
